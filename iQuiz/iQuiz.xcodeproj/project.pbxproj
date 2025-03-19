@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		6639AE202D8B64A000F34712 /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6639AE202D8B64A000F34712 /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = iQuiz.app; path = "/Users/fernandaruaro/Desktop/iquiz/iQuiz/build/Debug-iphoneos/iQuiz.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -46,16 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				6639AE222D8B64A000F34712 /* iQuiz */,
-				6639AE212D8B64A000F34712 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		6639AE212D8B64A000F34712 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6639AE202D8B64A000F34712 /* iQuiz.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +99,7 @@
 			mainGroup = 6639AE172D8B64A000F34712;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 6639AE212D8B64A000F34712 /* Products */;
+			productRefGroup = 6639AE172D8B64A000F34712;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

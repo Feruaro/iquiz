@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  QuestaoViewController.swift
 //  iQuiz
 //
 //  Created by Fernanda Ayres Ruaro on 19/03/25.
@@ -7,19 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    @IBOutlet weak var botao: UIButton!
-    
+class QuestaoViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configuraLayout()
     }
-    
+
     func configuraLayout() {
-        botao.layer.cornerRadius = 16
+        navigationItem.hidesBackButton = true
     }
-
-
 }
-
