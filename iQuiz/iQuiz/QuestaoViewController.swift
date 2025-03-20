@@ -15,6 +15,11 @@ class QuestaoViewController: UIViewController {
     @IBOutlet weak var tituloQuestao: UILabel!
     @IBOutlet var botoesQuestoes: [UIButton]!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let desempenhoVC = segue.destination as? DesempenhoViewController else { return }
+        desempenhoVC.pontuacao = pontuacao
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configuraLayout()
@@ -51,7 +56,9 @@ class QuestaoViewController: UIViewController {
         
         if numeroQuestao < questoes.count - 1 {
             numeroQuestao += 1
-            Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(configuraQuestoes), userInfo: nil, repeats: false)
+            Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(configuraQuestoes), userInfo: nil, repeats: false)
+        } else {
+            navegaTelaDesempenho()
         }
     }
     
@@ -61,5 +68,9 @@ class QuestaoViewController: UIViewController {
         UIColor(red: 211/255, green: 17/255, blue: 17/255, alpha: 1.0)
         
         botao.backgroundColor = cor
+    }
+    
+    func navegaTelaDesempenho() {
+        performSegue(withIdentifier: "irParaTelaDesempenho", sender: nil)
     }
 }

@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     }
     
     func configuraLayout() {
+        navigationItem.hidesBackButton = true
         botao.layer.cornerRadius = 16
     }
 
