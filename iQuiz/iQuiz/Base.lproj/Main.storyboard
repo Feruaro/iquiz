@@ -19,7 +19,7 @@
                                 <rect key="frame" x="64" y="200" width="265" height="104"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88b-ka-4qi">
-                                <rect key="frame" x="64" y="364" width="265" height="60"/>
+                                <rect key="frame" x="64" y="391" width="265" height="60"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="rgb-aB-7d7"/>
@@ -39,9 +39,10 @@
                         <constraints>
                             <constraint firstItem="oOL-nS-wZr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="6pc-iV-0nr"/>
                             <constraint firstItem="oOL-nS-wZr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="YWb-Le-swW"/>
-                            <constraint firstItem="88b-ka-4qi" firstAttribute="top" secondItem="oOL-nS-wZr" secondAttribute="bottom" constant="60" id="ffH-UC-pvU"/>
                             <constraint firstItem="88b-ka-4qi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="kjz-md-cZm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oOL-nS-wZr" secondAttribute="trailing" constant="64" id="ldu-3Z-aLI"/>
+                            <constraint firstItem="88b-ka-4qi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n8f-R3-jux"/>
+                            <constraint firstItem="88b-ka-4qi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vDt-6V-nxU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="88b-ka-4qi" secondAttribute="trailing" constant="64" id="z8J-4H-XAa"/>
                         </constraints>
                     </view>
@@ -234,6 +235,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="a1g-16-HJu"/>
         <segue reference="2JV-w7-Zam"/>
     </inferredMetricsTieBreakers>
     <resources>
